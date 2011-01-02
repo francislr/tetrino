@@ -1,0 +1,77 @@
+
+body {
+  background: #000;
+}
+
+.game {
+  position: relative;
+  width: 430px;
+  display: inline-block;
+}
+
+.tetrino {
+  position: relative;
+  border: 1px solid #000;
+  background: #ccc;
+  width: 160px;
+  height: 320px;
+}
+
+.TetrinoGrid {
+  display: inline-block;
+  background: url(tetrino_bg.jpg) repeat-y;
+  border: 1px solid #858585;
+  width: 160px;
+}
+
+.TetrinoDisplay {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  padding: 0 8px;
+}
+
+.TetrinoDisplay .TetrinoText {
+  display: block;
+  margin: 5px 0;
+}
+
+.TetrinoDisplay .TetrinoNextPiece {
+  position: relative;
+  display: block;
+  border: 1px solid #666666;
+  width: 64px;
+  height: 64px;
+}
+
+.TetrinoBlock-Blue {
+  background: url(blue-block.png) no-repeat #048bd8;
+}
+
+.TetrinoBlock-Orange {
+  background: url(orange-block.png) no-repeat #e7a421;
+}
+
+.TetrinoBlock-Red {
+  background: url(red-block.png) no-repeat #c20000;
+}
+
+.TetrinoBlock-Magenta {
+  background: url(magenta-block.png) no-repeat #a702ae;
+}
+
+.TetrinoBlock-Yellow {
+  background: url(yellow-block.png) no-repeat #c4ba16;
+}
+
+.TetrinoBlock-Green {
+  background: url(green-block.png) no-repeat #05cb00;
+}
+
+.TetrinoBlock-Grey {
+  background: url(grey-block.png) no-repeat #d8d8d8;
+}
+
+.TetrinoBlock-Trans {
+  background: url(trans-block.png) no-repeat;
+}
