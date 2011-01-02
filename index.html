@@ -12,62 +12,6 @@
       game = new TetrinoGame(10, 22, 16, 16);
       game.appendTo(document.getElementById("game1"));
       game.setController(new TetrinoKeybordController());
-      /*
-      grid = new TetrinoGrid(10, 20, 16, 16);
-      grid.appendTo(document.getElementById("game"));
-      /*
-      block1 = new TetrinoBlock("TetrinoBlock-Blue");
-      block2 = new TetrinoBlock("TetrinoBlock-Orange");
-      block3 = new TetrinoBlock("TetrinoBlock-Red");
-      block4 = new TetrinoBlock("TetrinoBlock-Magenta");
-      block5 = new TetrinoBlock("TetrinoBlock-Yellow");
-      block6 = new TetrinoBlock("TetrinoBlock-Green");
-      grid.setBlock(8, 18, block1);
-      grid.setBlock(7, 18, block2);
-      grid.setBlock(6, 18, block3);
-      grid.setBlock(8, 17, block4);
-      grid.setBlock(7, 17, block5);
-      grid.setBlock(6, 17, block6);
-      piece = new TetrinoPiece(16, 16,
-          [
-            [ 1, 1, 1 ],
-            [ 0, 1, 0 ],
-            [ 0, 0, 0 ],
-          ],
-        "TetrinoBlock-Red"
-      );
-      piece.appendTo(grid);
-
-      for (var i = 0; i < 10; i++) {
-        var g = new TetrinoBlock("TetrinoBlock-Trans");
-        grid.setBlock(i, 19, g)
-      }
-      
-      window.onkeydown = function (e) {
-        var x = 0, y = 0;
-        if (e.keyCode == 40) {
-          y = 1;
-        }
-        if (e.keyCode == 37) {
-          x = -1;
-        }
-        if (e.keyCode == 39) {
-          x = 1;
-        }
-        if (e.keyCode == 38) {
-          if (grid.checkRotationCollision(piece)) {
-            piece.rotate();
-          }
-        }
-        if (x || y) {
-          var cx = piece.x + x,
-              cy = piece.y + y;
-          if (grid.checkCollision(piece, cx, cy)) {
-            piece.setPosition(cx, cy);          
-          }
-          return false;
-        }
-      };*/
     </script>
   </body>
 </html>
